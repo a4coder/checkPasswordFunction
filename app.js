@@ -1,7 +1,10 @@
 function checkPassword(showTextSelector, inputSelector) {
+
   "use strict";
+
   let showText = document.querySelector(showTextSelector);
   let inputField = document.querySelector(inputSelector);
+  
   inputField.addEventListener("keyup", function () {
     function checkPwd(str) {
       if (str.length < 6) {
